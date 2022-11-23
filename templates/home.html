@@ -1,0 +1,15 @@
+{% extends "account/base.html" %}
+
+{% block content %}
+
+<div class="container">
+<H1>HOME</H1>
+
+
+{% if user.username %}
+
+<p> You are signed in as <b>{{user.first_name}} {{ user.last_name}}</b>.</p>
+
+{% endif %}
+</div>
+{% endblock %}
